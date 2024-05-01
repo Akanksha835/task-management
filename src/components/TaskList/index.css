@@ -1,0 +1,47 @@
+/* TaskList.css */
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-list h2 {
+  margin-bottom: 10px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-list li h3 {
+  margin-top: 0;
+}
+
+.task-list li p {
+  margin: 5px 0;
+}
+
+.task-list li div {
+  margin-top: 10px;
+}
+
+.task-list li div button {
+  margin-right: 5px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.task-list li div button:hover {
+  background-color: #218838;
+}
