@@ -9,9 +9,8 @@ class TaskSummary extends Component {
     // Logic for calculating task metrics
     const {tasks} = this.props
     const totalTasks = tasks.length
-    const completedTasks = tasks.filter(
-      task => task.status === 'Completed',
-    ).length
+    const completedTasks = tasks.filter(task => task.status === 'Completed')
+      .length
     const completionRate =
       totalTasks === 0 ? 0 : (completedTasks / totalTasks) * 100
 

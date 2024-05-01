@@ -3,6 +3,7 @@
 import React, {Component} from 'react'
 
 import './index.css'
+
 class TaskList extends Component {
   handleStatusChange = (index, status) => {
     this.props.updateTaskStatus(index, status) // Pass index and new status to updateTaskStatus function
@@ -19,6 +20,7 @@ class TaskList extends Component {
               <h3>{task.taskName}</h3>
               <p>{task.taskDescription}</p>
               <p>Due Date: {task.dueDate}</p>
+              <p>Assignee: {task.assignee}</p>
               <div>
                 <button
                   onClick={() => this.handleStatusChange(index, 'Pending')}
